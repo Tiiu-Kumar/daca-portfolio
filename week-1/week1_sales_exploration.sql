@@ -74,3 +74,18 @@ SELECT COUNT(*) AS poe_tehinguid
 FROM sales   
 WHERE channel = 'pood';   `
 -- tulemus on 10030
+
+-- maksemeetodite analüüs
+SELECT COUNT(*) AS kaart   
+FROM sales    
+WHERE payment_method = 'kaart';
+
+
+--Loe tehingud kokku iga maksemeetodi kohta tehtud tehingud:
+SELECT  payment_method, 
+COUNT(sale_id) AS tehinguid
+FROM     sales
+WHERE payment_method IS NOT NULL
+GROUP BY  payment_method
+ORDER BY tehinguid DESC;   
+--see töötab
