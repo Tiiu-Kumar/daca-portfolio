@@ -58,7 +58,7 @@ GROUP BY  store_location
 ORDER BY tehinguid DESC;
 
 Tulemus :
-![tehingute arv kaupluste kaupa](Poe asukoha tehingud.png)
+![tehingute arv kaupluste kaupa](Poeasukohad.png)
 
 # Lisaülesanne : lugesin kokku tehingud maksemeetodite kaupa :
 
