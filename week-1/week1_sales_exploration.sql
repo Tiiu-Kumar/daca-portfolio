@@ -54,6 +54,10 @@ GROUP BY  store_location
 ORDER BY tehinguid DESC;   
 --see töötab
 
+--tulemus on 
+--Tallinn 5704, Tartu 2708 , Pärnu 1618
+
+
 --aga see mitte
 SELECT store_location,
 COUNT(*) AS tehinguid
@@ -89,3 +93,4 @@ WHERE payment_method IS NOT NULL
 GROUP BY  payment_method
 ORDER BY tehinguid DESC;   
 --see töötab
+-- tulemus on järelmaks 4997, sularaha 5108, kaart 5129
