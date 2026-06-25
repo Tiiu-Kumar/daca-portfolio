@@ -49,6 +49,31 @@ WHERE channel = 'pood';   `
 
 tulemus on 10030
 
+# Lisaülesanne : lugesin kokku tehingud iga kaupluse asukoha kohta 
+SELECT  store_location, 
+COUNT(sale_id) AS tehinguid
+FROM     sales
+WHERE store_location IS NOT NULL
+GROUP BY  store_location
+ORDER BY tehinguid DESC;
+
+Tulemus :
+![tehingute arv kaupluste kaupa](poe asukoha tehingud.png)
+
+# Lisaülesanne : lugesin kokku tehingud maksemeetodite kaupa :
+
+SELECT  payment_method, 
+COUNT(sale_id) AS tehinguid
+FROM     sales
+WHERE payment_method IS NOT NULL
+GROUP BY  payment_method
+ORDER BY tehinguid DESC;   
+
+Tulemus :
+![tehingute arv maksemeetodite kaupa](maksemeetod.png)
+
+
+
 # Lühike kokkuvõte
 Müügikanaleid on 2 : online ja pood
 Poed asuvad kolmes linnas : Tallinn, Tartu, Pärnu.
