@@ -1,6 +1,7 @@
 # Müügikanalid ja asukohad
 # Vaatan kanalitega seotud veerge
 SELECT channel, store_location, payment_method FROM sales LIMIT 10;
+![Müügitabeli päringu tulemus](week1_sales_results.png)
 
 # Leian kõik müügikanalid mida Urbanstyle kasutab:
 SELECT DISTINCT channel FROM sales;   
@@ -32,7 +33,7 @@ WHERE store_location IS NULL;
 tulemus on 5284 tk
 sama tulemuse annab päring kui otsida Where channel=online
 
-# Tegin lisapäringu ja leidsin vastuolu - channel=online on maksemeetod s.h. ka sularaha
+# Tegin lisapäringu ja leidsin vastuolu: kui channel=online siis kasutusel on maksemeetod ka sularaha
 
 # Lisaülesanded : online tehingute arv
 
