@@ -30,7 +30,7 @@ SELECT COUNT(*) AS puuduv_asukoht
 FROM sales    
 WHERE store_location IS NULL;
 
-tulemus on 5284 tk
+tulemus on 5204 tk
 sama tulemuse annab päring kui otsida Where channel=online
 
 # Tegin lisapäringu ja leidsin vastuolu: kui channel=online siis kasutusel on maksemeetod ka sularaha
