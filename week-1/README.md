@@ -1,6 +1,8 @@
  # Nädal 1: SQL Basics
 Nädal 1 harjutasime  SELECT, WHERE, ORDER BY, DISTINCT ja COUNT kasutamist.
 Grupitöös oli minul Roll D, mis  keskendub kanalitele ja asukohtadele (müügikanal, kaupluse asukoht, makseviis)
+ÜLESANNE:Toomas tahab teada, milliste kanalite ja asukohtade kaudu UrbanStyle müüki teeb. Uurisin sales tabelit teisest vaatenurgast kui Roll A: millised müügikanalid on olemas? Millistes kauplustes müüakse? Milliseid makseviise kasutatakse? Kas on tehinguid ilma asukoha infota?
+
 Urbanstyle kasutuses on 2 müügikanalit: online ja pood. Poed asuvad 3 linnas. Kui poe asukoht (store_location) pole määratud, siis on tegemist veebipoega.
 Kasutusel on 3 makseviisi: järelmaks, kaart,sularaha
 Tehinguid kus poe asukoht on puudu on 5284 tk (veebipoe ostud)
