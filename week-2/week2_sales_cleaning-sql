@@ -1,0 +1,73 @@
+--nädal 2 müügiandmete puhastaja (Sales Data Cleaner) - roll (A)
+--Loo test koopia (ära tööta production tabelil!):
+CREATE TABLE sales_test AS SELECT * FROM sales;
+-- Kontrolli ridade arvu
+SELECT COUNT(*) AS ridade_arv FROM sales_test;
+-- tulemus : tabelis sales_test on 15234 rida
+
+--Leia NULL väärtused kriitilistes väljades:
+SELECT
+    COUNT(*) FILTER (WHERE customer_id IS NULL) AS null_customer_id,
+    COUNT(*) FILTER (WHERE sale_date IS NULL) AS null_sale_date,
+    COUNT(*) FILTER (WHERE total_price IS NULL) AS null_total_price
+FROM sales_test;
+--Tulemus: 1487 NULL customer_id, 0 NULL sale_date, 0 NULL total_price
+
+--Kontrolli kuupäevade formaati — kas on tuleviku kuupäevi?
+SELECT COUNT(*) AS tuleviku_kuupaevad
+FROM sales_test
+WHERE sale_date > CURRENT_DATE;
+--tulemus: 0 tuleviku kuupäeva.
+
+--Leia duplikaadid — millised tellimused korduvad?
+--duplikaadid invoice_id järgi
+
+SELECT  invoice_id, COUNT(*) AS koopiate_arv
+FROM sales_test
+GROUP BY invoice_id
+HAVING COUNT(*) > 1
+ORDER BY koopiate_arv DESC;
+--duplikaatseid invoice_id on 4013 tk
+
+--Loe kokku duplikaatsete ridade arv:
+SELECT COUNT(*) AS duplikaat_read
+FROM sales_test
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM sales_test
+    GROUP BY invoice_id
+);
+-- 5116 rida on duplikaadid
+-- vaata ühe konkreetse invoice_id järgi duplikaat ridu
+SELECT * FROM sales_test 
+WHERE 
+invoice_id = 'INV-202308-00283';
+
+-- kui customer_id IS NULL siis pole mitte andmeviga vaid nö külalisost - kehtiv äriloogika
+--selliseid oste on :
+SELECT COUNT(*) AS külalisostud FROM sales_test WHERE customer_id IS NULL;
+--selliseid on 1487 tk 
+-- Analüüsis kasuta COALESCE, et anda neile ajutine silt:
+-- SELECT COALESCE(customer_id, -1) AS customer_id_puhas FROM sales_test;
+
+-- Paranda tuleviku kuupäevad
+-- tegelikult tuleviku kuupäevi pole
+UPDATE sales_test
+SET sale_date = CURRENT_DATE
+WHERE sale_date > CURRENT_DATE;
+
+-- Kontrolli tulemust
+SELECT COUNT(*) AS ridu_parast FROM sales_test;
+--PUHASTAMIS SKRIPT
+-- min(id)loeb minimaalse id väärtuse
+-- kui invoice_id sama siis on duplik.kirje
+--- loend id-st ja võetakse väikseim
+--kustutan duplikaadid:
+--enne proovin läbi select *ga
+--DELETE
+--SELECT *
+FROM sales_test
+WHERE id NOT IN (
+    SELECT MIN(id) FROM sales_test GROUP BY invoice_id
+);
+--kustutab duplikaatsed read
