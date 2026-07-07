@@ -12,32 +12,37 @@ See dokument annab ülevaate tooteandmete puhastamise tulemustest, tuvastatud pr
 - loeti kokku mitu "kadunud" klienti on  
 - analüüsiti "kadunud" kliente linnade kaupa 
 - uuriti millal "kadunud" kliendid on registreeunud  
-- grupeeriti "kadudnud" kliendid registreeimiskuu kaupa ja otsiti mustreid
+- grupeeriti "kadudnud" kliendid registreerimiskuu kaupa ja otsiti mustreid
 Kõik sammud dokumenteeriti 
 ---
 
 ## 📊 2. Peamised tulemused
 
 ### **2.1. Kliendid kellel pole ühtegi ostu**
-- näide`  
+- näide`
+  <img width="697" height="257" alt="image" src="https://github.com/user-attachments/assets/a6eaf3b1-8898-4cc1-8a15-387c25add037" />
+
 - Selliseid kliente on **599**
 
 ### **2.2. Kadunud kliendid linnade kaupa **
 - Leitud: näide
+  
+<img width="244" height="297" alt="image" src="https://github.com/user-attachments/assets/79a3b228-64a1-4734-9ffe-cdffd24ae064" />
 
 
 ### **2.3. Kadunu klientide registreerimise kuupäev**
 -  näide 
+<img width="425" height="259" alt="image" src="https://github.com/user-attachments/assets/796b04f2-808f-451e-821e-0dda950bd452" />
 
 
 ### **2.4. Kontroll : kas aktiivsete ja kadunud klientide arv annab kokku koguklientide arvu**
 - Kadunud kliente: **599**  
 - Aktiivseid kliente: **2551**
-- pilt
+
 
 ### **2.5. Kadunud klientide mustrite otismine**
-- 
----
+<img width="288" height="418" alt="image" src="https://github.com/user-attachments/assets/6ac11446-e67f-4962-86a7-d928796c3f81" />
+
 
 ## 🧭 3. Kokkuvõte Annale
 
