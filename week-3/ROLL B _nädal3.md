@@ -19,19 +19,21 @@ Kõik sammud dokumenteeriti
 ## 📊 2. Peamised tulemused
 
 ### **2.1. Kliendid kellel pole ühtegi ostu**
-- näide`
+- näide
+  
   <img width="697" height="257" alt="image" src="https://github.com/user-attachments/assets/a6eaf3b1-8898-4cc1-8a15-387c25add037" />
 
 - Selliseid kliente on **599**
 
-### **2.2. Kadunud kliendid linnade kaupa **
-- Leitud: näide
+### **2.2. Kadudnud kliendid linnade kaupa**
+-  näide
   
 <img width="244" height="297" alt="image" src="https://github.com/user-attachments/assets/79a3b228-64a1-4734-9ffe-cdffd24ae064" />
 
 
-### **2.3. Kadunu klientide registreerimise kuupäev**
--  näide 
+### **2.3. Kadunud klientide registreerimise kuupäev**
+-  näide
+  
 <img width="425" height="259" alt="image" src="https://github.com/user-attachments/assets/796b04f2-808f-451e-821e-0dda950bd452" />
 
 
