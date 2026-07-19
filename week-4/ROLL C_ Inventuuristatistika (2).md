@@ -50,7 +50,9 @@ iga kategooria top 3 tooted:
 - tooteid kokku : **362**  
 
 
-### **2.5. Päring 2.2.lisa tuvastas et on hulk tooteid, mida on laos palju, kuid viimase 6 kuu jooksul pole müüdud**
+### **2.5. Päring 2.2.lisa tuvastas et on hulk tooteid, mida on laos palju, kuid viimase  kuu jooksul pole müüdud**
+
+<img width="707" height="295" alt="image" src="https://github.com/user-attachments/assets/1adc35d1-0192-40a0-9c5f-426625fdc33c" />
 
 
 
