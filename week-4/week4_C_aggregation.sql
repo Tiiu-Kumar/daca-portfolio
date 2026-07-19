@@ -28,17 +28,25 @@ ORDER BY kogus DESC;
 
 --seos laoga 
 --müük vs laos
-SELECT
+WITH laokontroll AS (
+   SELECT
+product_name,
 category,
-SUM(quantity) AS myydud_kogus,
-SUM(i.quantity_available) AS laos_olemas,
-ROUND(AVG(s.quantity), 2) AS keskmine_myyk
-FROM sales s
-JOIN products p ON s.product_id = p.product_id
-JOIN inventory i ON p.product_id = i.product_id
-GROUP BY p.category
-HAVING SUM(quantity) > 100
- ORDER BY myydud_kogus DESC;
+i.quantity_available,
+COALESCE(SUM(s.quantity),0) AS myydud_kogus
+FROM products p 
+ JOIN inventory i ON p.product_id = i.product_id
+ LEFT JOIN sales s ON p.product_id = s.product_id
+ AND s.sale_date > CURRENT_DATE - INTERVAL '1 month'
+    GROUP BY p.product_name, p.category, i.quantity_available
+    
+
+ )
+ SELECT *
+ FROM laokontroll
+ WHERE quantity_available > 50 AND myydud_kogus = 0
+ORDER BY quantity_available DESC;
+
 
 
 --Toodete järjestus kategooria sees — kasuta window function'i:
