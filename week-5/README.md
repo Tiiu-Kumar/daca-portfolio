@@ -27,17 +27,25 @@ Disainipõhimõtted: Rakendasid F-pattern hierarhiat (olulisim info vasakul üle
 1. KPI kaardid (Hero Numbers)
 Paigutasin dashboardi ülemisse serva viis näitajat
 :
+
+.
 Kogukäive (Total Revenue): [2.91M]
+
 .
 Klientide arv: [3150]
+
 .
 Keskmine tellimus (AOV): [288 €]
+
 .
 Müügitulu kasv % (YoY): [19%]
+
 .
 Müügitulu muutus % (YoY): [-86% ]
-.
+
+
 2. Müügitulu trend (Line Chart)
+
 Kasutasin joondiagrammi, et näidata käibe muutust kuude lõikes
 .
 Leid: Graafik näitab stabiilset kasvu kuni 2024. aasta lõpuni, mil saavutati tipphetk
