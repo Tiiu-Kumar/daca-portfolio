@@ -63,6 +63,9 @@ Tuvastasin olulise andmekvaliteedi probleemi: 35,7% klientidest on segmentimata 
 .
 
 **Andmete allikas:** PostgreSQL andmebaas Supabase platvormil
+
+<img width="1273" height="653" alt="image" src="https://github.com/user-attachments/assets/77e0eafb-3f1e-4a4a-a06b-5a7dcbf30372" />
+
 .
 
 **Ärilised soovitused Liis Koppelile**
