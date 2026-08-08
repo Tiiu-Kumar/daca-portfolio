@@ -1,0 +1,31 @@
+## Nädal 7: Python Pandas — RFM kliendisegmenteerimine
+Sel nädalal lahendasin UrbanStyle.ltd tootehalduri Marko Saare äriprobleemi: 
+kes on meie väärtuslikuimad kliendid ja kes on ohus kaduda?
+
+Kasutasin Python-i ja pandas teeki, et töödelda müügiandmeid ning luua RFM mudel, mis jagab kliendid käitumuslikesse segmentidesse
+
+### Minu roll Visualize roll (Roll D)
+
+. Minu fookuses oli analüüsi tulemuste visualiseerimine Plotly teegi abil
+. Minu eesmärk oli luua vaated, mis ei näita ainult numbreid, vaid räägivad ärijuhtidele loo kliendibaasi tervisest
+
+Minu peamised tegevused:
+
+Segmentide jaotuse visualiseerimine: Lõin tulpdiagrammi, mis näitab klientide arvu igas RFM segmendis
+.
+RFM hajuvusdiagramm (Scatter plot): Visualiseerisin seoseid hiljutisuse (Recency) ja rahalise väärtuse (Monetary) vahel, kus punktide suurus tähistas ostusagedust (Frequency)
+.
+Andmete valideerimine visuaalselt: Kontrollisin, et VIP Champions ja Lost segmendid paikneksid graafikul loogilistes kohtades
+.
+
+1. VIP-klientide ebaproportsionaalne mõju (Pareto printsiip)
+Analüüsi tulemusena selgus, et väike grupp VIP Champions (skooriga 13–15) genereerib suurema osa UrbanStyle’i kogukäibest
+. Need on kliendid, kes ostavad tihti, kulutavad palju ja on hiljuti külastanud e-poodi
+.
+Äriline soovitus: Marko ja Anna peaksid neile pakkuma eksklusiivset varajast ligipääsu uutele kollektsioonidele ilma suurte allahindlusteta, et hoida marginaali kõrgena
+.
+2. "At Risk" segmendi kõrge potentsiaal
+Tuvastasin olulise hulga kliente segmendis At Risk, kellel on kõrge ajalooline rahaline väärtus, kuid kelle viimasest ostust on möödunud mitu kuud
+. See segment on kriitiline, sest nad on ühe sammu kaugusel lõplikust lahkumisest (Lost)
+.
+Äriline soovitus: Saata neile personaliseeritud "me igatseme teid" e-mail koos 15% sooduskoodiga, mis kehtib vaid 7 päeva, et tekitada kiiret huvi naasmiseks
