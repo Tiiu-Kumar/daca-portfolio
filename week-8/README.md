@@ -1,5 +1,5 @@
 
-## Nädal 8: UrbanStyle.ltd Andmetoru Automatiseerimine
+## Nädal 8: UrbanStyle.ltd Pipeline automatiseerimine
 
 ### Projekti ülevaade
 Selle nädala eesmärk oli muuta seni manuaalne analüüs täisautomaatseks andmetoruks (pipeline). Kui varem sõltusime CSV failide käsitsi eksportimisest, siis nüüd suhtleb süsteem otse Supabase API-ga. See tagab tegevjuht alati värsked andmed ilma igasuguse käsitööta
