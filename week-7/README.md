@@ -13,36 +13,42 @@ Minu eesmärk oli luua vaated, mis ei näita ainult numbreid, vaid räägivad ä
 
 Segmentide jaotuse visualiseerimine: 
 
-1. Tulpdiagramm, mis näitab klientide arvu igas RFM segmendis
+**1. Tulpdiagramm**, mis näitab klientide arvu igas RFM segmendis
+   <img width="1216" height="791" alt="image" src="https://github.com/user-attachments/assets/84fdbbb4-7549-45b7-8164-dccc99a59ebb" />
 
 
-2. RFM hajuvusdiagramm (Scatter plot): Visualiseerisin seoseid hiljutisuse (Recency) ja rahalise väärtuse (Monetary) vahel, kus punktide suurus tähistas ostusagedust (Frequency)
+
+**2. RFM hajuvusdiagramm (Scatter plot)**: Visualiseerisin seoseid hiljutisuse (Recency) ja rahalise väärtuse (Monetary) vahel, kus punktide suurus tähistas ostusagedust (Frequency)
 .
 Andmete valideerimine visuaalselt: Kontrollisin, et VIP Champions ja Lost segmendid paikneksid graafikul loogilistes kohtades
 
-3. Tulpdiagramm : TOP 10 VIP klienti
+**3. Tulpdiagramm** : TOP 10 VIP klienti
 
-### Peamised leiud
+### 📊  Peamised leiud
 .
 
-1. VIP-klientide ebaproportsionaalne mõju .
+**1. VIP-klientide ebaproportsionaalne mõju**
    
 Analüüsi tulemusena selgus, et segment VIP Champions (skooriga 13–15) moodustab 17,91 % klientidest (245 klienti) ja annab suurema osa UrbanStyle’i kogukäibest 42,82 %.
 
 Need on kliendid, kes ostavad tihti, kulutavad palju ja on hiljuti külastanud e-poodi
 
 
-**Äriline soovitus:** Marko ja Anna peaksid neile pakkuma eksklusiivset varajast ligipääsu uutele kollektsioonidele ilma suurte allahindlusteta, et hoida marginaali kõrgena
+**🧭 Äriline soovitus:** Marko ja Anna peaksid neile pakkuma eksklusiivset varajast ligipääsu uutele kollektsioonidele ilma suurte allahindlusteta, et hoida marginaali kõrgena
 
 
-2. "At Risk" segmendi kõrge potentsiaal
+**2. "At Risk" segmendi kõrge potentsiaal**
    
 Tuvastasin olulise hulga kliente segmendis At Risk, kellel on kõrge ajalooline rahaline väärtus, kuid kelle viimasest ostust on möödunud mitu kuud (529 klienti, kes moodustavad klientide üldarvust 20,83% ja nende osakaal kogukäibest on 7,18%)
 
 See segment on kriitiline, sest nad on ühe sammu kaugusel lõplikust lahkumisest (Lost)
 
 
-**Äriline soovitus:** Saata neile personaliseeritud "me igatseme teid" e-mail koos 15% sooduskoodiga, mis kehtib vaid 7 päeva, et tekitada kiiret huvi naasmiseks
+**🧭 Äriline soovitus:** 
+Saata neile personaliseeritud "me igatseme teid" e-mail koos 15% sooduskoodiga, mis kehtib vaid 7 päeva, et tekitada kiiret huvi naasmiseks
+
+<img width="379" height="230" alt="image" src="https://github.com/user-attachments/assets/ae1d7c30-039b-4066-98db-58999b452f17" />
+
 
 ### AI kasutamine
 AI aitas sel nädalal väga palju, lahendasin tema abiga andmete importimises tekkinud vigu, samuti aitas koodide kirjutamisel ning RFM koodi selgitamisel. Lisaks aitas graafikutega - kui algul  graafikute koostamisel tekkis viga, siis soovitas AI neid salvestada html-na.
