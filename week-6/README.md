@@ -8,38 +8,34 @@ Kasutasin data storytelling tehnikaid, et muuta toornumbrid operatsioonijuht Lii
 
 ## Äriline kontekst (The Story):
 
-
 **Setup:**
 
 UrbanStyle on Eesti turul kiiresti kasvav bränd, kus Tartu kauplus mängib olulist rolli Lõuna-Eesti klientide teenindamisel
-.
 
 **Conflict:**
 
 Kuigi ettevõte kasvab, on Tartu poe müügitrendid olnud ebaühtlased ning andmetes esineb 2025. aastal kriitilisi lünki, mis takistavad täpset planeerimist
-.
 
 **Resolution:** 
 
 Tuvastasin Tartu poe peamised edutegurid (kõrge keskmine tellimus) ja andmekvaliteedi murekohad (lojaalsusandmete puudumine)
-.
 
 **Action:**
 
 Esitasin Liis Koppelile konkreetsed soovitused varude ja kliendisuhete parandamiseks
-.
 
 ## Dashboard-i peamised komponendid ja leiud (Roll B)
 
 **1. Juhtide kokkuvõte (Executive Summary)**
+
 Lisasin dashboard-i ülaossa KPI kaardid:
 
-Kogukäive: 521,60K EUR – Tartu panus on stabiilne
+- Kogukäive: 521,60K EUR – Tartu panus on stabiilne
 
-Klientide arv : 1614K
-Keskmine tellimus: 290 € – kõrgem kui ettevõtte keskmine (288 €), mis viitab Tartu klientide eelistusele kallimate toodete vastu
+- Klientide arv : 1614K
+- Keskmine tellimus: 290 € – kõrgem kui ettevõtte keskmine (288 €), mis viitab Tartu klientide eelistusele kallimate toodete vastu
 
-Müügitulu kasv (2023 vs 2024): +13% – näitab tervislikku arengut enne andmekaost
+- Müügitulu kasv (2023 vs 2024): +13% – näitab tervislikku arengut enne andmekaost
 .
 
 **2. Müügitrend ja annotatsioonid**
@@ -47,19 +43,20 @@ Müügitulu kasv (2023 vs 2024): +13% – näitab tervislikku arengut enne andme
 Kasutasin joondiagrammi, kuhu lisasin annotatsioonid, et selgitada anomaaliaid
 :
 
-Müügitipp (detsember 2024): Märgistatud kui "jõulukampaania efekt", mis tõi kaasa aasta suurima müügi
+**Müügitipp (detsember 2024):** Märgistatud kui "jõulukampaania efekt", mis tõi kaasa aasta suurima müügi
 .
 
-Andmelünk (2025): Selgitus puuduvate märtsi-novembri andmete kohta, et vältida vääraid järeldusi müügi kukkumisest
+**Andmelünk (2025):** Selgitus puuduvate märtsi-novembri andmete kohta, et vältida vääraid järeldusi müügi kukkumisest
 .
 
 **3. Kliendisegmentide jaotus**
 
 Tuvastasin olulise andmekvaliteedi probleemi: 35,7% klientidest on segmentimata ("None")
-. See on kriitiline leid turundusjuht Annale ja operatsioonijuht Liisile – me kaotame võimaluse personaalseks teeninduseks
+. 
+See on kriitiline leid turundusjuht Annale ja operatsioonijuht Liisile – me kaotame võimaluse personaalseks teeninduseks
 .
 
-**Tööriist:**  Power BI
+**🛠 Tööriist:**  Power BI
 .
 
 **Andmete allikas:** PostgreSQL andmebaas Supabase platvormil
@@ -68,7 +65,7 @@ Tuvastasin olulise andmekvaliteedi probleemi: 35,7% klientidest on segmentimata 
 
 .
 
-**Ärilised soovitused Liis Koppelile**
+## 🧭 Ärilised soovitused Liis Koppelile
 
 
 Andmete taastamine: Koostöös Toomas Kasega tuleb taastada 2025. aasta andmed, et saaksime teha adekvaatseid prognoose 2026. aastaks
