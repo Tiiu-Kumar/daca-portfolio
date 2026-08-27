@@ -34,7 +34,7 @@ Minu ülesandeks oli olla süsteemi "dirigent", kes paneb kõik osad ühtselt t�
 **Logimine**: Asendasid tavalised print() laused professionaalse logging mooduliga, mis salvestab süsteemi ajaloo ja vead "musta kasti" faili
 
 
-Programmi käivitamine : python pipeline.py --date kuupäev
+**Programmi käivitamine** : python pipeline.py --date kuupäev
 
 ### AI kasutamine :
 Kasutasin AI abi ülesannete koodide koostamiseks , eriti pipeline.py jaoks, mis oli uus käsitlus, samuti log failide koostamisel.
