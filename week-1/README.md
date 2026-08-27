@@ -14,6 +14,10 @@ millised müügikanalid on olemas? Millistes kauplustes müüakse? Milliseid mak
 
 ✅ Kasutusel on 3 makseviisi: järelmaks, kaart,sularaha
 
+Tulemus :
+
+![tehingute arv maksemeetodite kaupa](maksemeetod.png)
+
 ✅ Tehinguid kus poe asukoht on puudu on 5284 tk (veebipoe ostud)
 
 Sama tulemuse andis päring kus küsisin online müügikanali tehinguid.
