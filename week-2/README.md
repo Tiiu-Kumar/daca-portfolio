@@ -31,6 +31,8 @@ Puuduvad kliendinimed ja e-mailid saab asendada väärtusega 'tundmatu', kasutad
 Kontrollisin müügikuupäevi CASE WHEN lausega, et tuvastada ebaloogilised kanded (tuleviku kuupäevad või kanded enne ettevõtte asutamist 2020. aastal)
 . Tuleviku kuupäevi ei olnud.
 
+
+
 ## Tulemused ja äriline mõju
 
 Andmete puhastamise tulemusena on UrbanStyle'i raportid nüüd usaldusväärsed:
@@ -39,6 +41,8 @@ Duplikaatide eemaldamine: Vähendas näiliselt ülepaisutatud müüginumbreid um
 .
 
 Andmete kvaliteet: Ühtlustatud kliendiandmed võimaldavad  pakkuda paremat personaalset teenindust
+
+**Täpsem analüüs: ROLL A_myygiandmete puhastamine.md**
 
 Meeskonna koondraport : https://github.com/silvervarusk/Sales-Analytics/blob/main/02_Sustainability_Analysis/week2_team_cleaning_report.md
 
